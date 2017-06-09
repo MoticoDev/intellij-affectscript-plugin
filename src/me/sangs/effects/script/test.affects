@@ -1,0 +1,45 @@
+use script TransparentParticles
+
+@Comp(duration=300, fps=29.97, width=1920, height=1080, name="Affect Script 테스트 1")
+mainComp = create composition
+
+@Solid(name="White Solid", color=[255, 255, 255], width=1920, height=1080, duration=300)
+whiteSolid = create solid
+add whiteSolid to mainComp
+
+@Text("Affect Script\nTest")
+introText = create text
+
+setValues introText {
+    justification: "center",
+    fontSize: 30,
+    fontFamily: "NanumSquare"
+}
+
+set duration 300 to introText
+add introText to mainComp
+
+photo1 = import file
+photo2 = import file
+
+setValues photo1 {
+    "file" : "dimigo1.jpg"
+}
+
+setValues photo2 {
+    "file" : "dimigo2.png"
+}
+
+effects = new TransparentParticles
+
+setValues effects {
+    count: 2,
+    file1: photo1,
+    file2: photo2,
+    transition: "random",
+    startSeconds: 5
+}
+
+add effects to mainComp
+
+set output "project" to this

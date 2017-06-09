@@ -1,0 +1,42 @@
+<idea-plugin>
+  <id>me.sangs.effects.script</id>
+  <name>Affect Script for After Effects</name>
+  <version>1.0.0</version>
+  <vendor email="leeshoon1344@gmail.com" url="https://affect.script">YourCompany</vendor>
+
+  <description><![CDATA[
+      Enter short description for your plugin here.<br>
+      <em>most HTML tags may be used</em>
+    ]]></description>
+
+  <change-notes><![CDATA[
+      Add change notes here.<br>
+      <em>most HTML tags may be used</em>
+    ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="145.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <fileBasedIndex implementation="me.sangs.effects.script.AffectScriptFileIndex" />
+    <iconProvider implementation="me.sangs.effects.script.icon.AffectScriptIconProvider" />
+    <fileTypeFactory implementation="me.sangs.effects.script.AffectScriptFileTypeFactory" />
+    <lang.parserDefinition implementationClass="me.sangs.effects.script.AffectScriptDefinition" language="AffectScript" />
+    <lang.syntaxHighlighterFactory implementationClass="me.sangs.effects.script.highlight.AffectScriptSyntaxHighlighterFactory" key="AffectScript" />
+    <colorSettingsPage implementation="me.sangs.effects.script.highlight.AffectScriptColorSettingsPage" />
+    <codeInsight.lineMarkerProvider language="AffectScript" implementationClass="me.sangs.effects.script.marker.AffectScriptLineMarkerProvider"/>
+    <completion.contributor language="AffectScript" implementationClass="me.sangs.effects.script.complete.AffectScriptCompletionContributor" />
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+  </actions>
+
+</idea-plugin>
