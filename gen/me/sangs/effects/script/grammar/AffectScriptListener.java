@@ -1,4 +1,4 @@
-// Generated from /Volumes/IntelliJ CE Source/EffectScript/src/me/sangs/effects/script/grammar/AffectScript.g4 by ANTLR 4.7
+// Generated from /Users/dsa28s/Desktop/intellij-affectscript-plugin/src/me/sangs/effects/script/grammar/AffectScript.g4 by ANTLR 4.7
 package me.sangs.effects.script.grammar;
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 

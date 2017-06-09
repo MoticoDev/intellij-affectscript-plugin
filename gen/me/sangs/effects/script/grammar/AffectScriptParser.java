@@ -1,4 +1,4 @@
-// Generated from /Volumes/IntelliJ CE Source/EffectScript/src/me/sangs/effects/script/grammar/AffectScript.g4 by ANTLR 4.7
+// Generated from /Users/dsa28s/Desktop/intellij-affectscript-plugin/src/me/sangs/effects/script/grammar/AffectScript.g4 by ANTLR 4.7
 package me.sangs.effects.script.grammar;
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
@@ -18,7 +18,7 @@ public class AffectScriptParser extends Parser {
 		new PredictionContextCache();
 	public static final int
 		T__0=1, T__1=2, T__2=3, T__3=4, T__4=5, T__5=6, T__6=7, T__7=8, T__8=9, 
-		T__9=10, T__10=11, USE_K=12, SCRIPT_k=13, CREATE_K=14, COMPOSITION_K=15, 
+		T__9=10, USE_K=11, SCRIPT_k=12, CREATE_K=13, COMPOSITION_K=14, SHAPE_K=15, 
 		SET_K=16, TO_K=17, ADD_K=18, TEXT_K=19, OPEN_K=20, SHOW_K=21, MSGBOX_K=22, 
 		IMPORT_K=23, FILE_K=24, SELECT=25, SOLID_K=26, APPLY_K=27, EFFECT_K=28, 
 		PARAMS_K=29, NEW_K=30, FOLDER_K=31, ANNOTATION_MARK=32, MOVE_K=33, NEW_=34, 
@@ -52,20 +52,19 @@ public class AffectScriptParser extends Parser {
 	};
 
 	private static final String[] _LITERAL_NAMES = {
-		null, "'question'", "'params'", "'shape'", "'oval'", "'yes'", "'no'", 
-		"'>>>'", "'answer'", "'->'", "'rgb'", "'.'", "'use'", "'script'", "'create'", 
-		"'composition'", "'set'", "'to'", "'add'", "'text'", "'open'", "'show'", 
-		"'messagebox'", "'import'", "'file'", "'select'", "'solid'", "'apply'", 
-		"'effect'", "'parameters'", "'new'", "'folder'", "'@'", "'move'", null, 
-		"'rectangle'", "'setValues'", "'('", "')'", "':'", "','", "'['", "']'", 
-		"'{'", "'}'", "'if'", "'else'", "'while'", "'var'", "'='", "'return'", 
-		"'print'", "'func'", "'int'", "'float'", "'string'", "'boolean'", "'true'", 
-		"'false'", "'-'", "'!'", "'*'", "'/'", "'+'", "'<'", "'<='", "'=='", "'!='", 
-		"'>'", "'>='", "'||'", "'&&'", "' . '"
+		null, "'question'", "'params'", "'oval'", "'yes'", "'no'", "'>>>'", "'answer'", 
+		"'->'", "'rgb'", "'.'", "'use'", "'script'", "'create'", "'composition'", 
+		"'shape'", "'set'", "'to'", "'add'", "'text'", "'open'", "'show'", "'messagebox'", 
+		"'import'", "'file'", "'select'", "'solid'", "'apply'", "'effect'", "'parameters'", 
+		"'new'", "'folder'", "'@'", "'move'", null, "'rectangle'", "'setValues'", 
+		"'('", "')'", "':'", "','", "'['", "']'", "'{'", "'}'", "'if'", "'else'", 
+		"'while'", "'var'", "'='", "'return'", "'print'", "'func'", "'int'", "'float'", 
+		"'string'", "'boolean'", "'true'", "'false'", "'-'", "'!'", "'*'", "'/'", 
+		"'+'", "'<'", "'<='", "'=='", "'!='", "'>'", "'>='", "'||'", "'&&'", "' . '"
 	};
 	private static final String[] _SYMBOLIC_NAMES = {
-		null, null, null, null, null, null, null, null, null, null, null, null, 
-		"USE_K", "SCRIPT_k", "CREATE_K", "COMPOSITION_K", "SET_K", "TO_K", "ADD_K", 
+		null, null, null, null, null, null, null, null, null, null, null, "USE_K", 
+		"SCRIPT_k", "CREATE_K", "COMPOSITION_K", "SHAPE_K", "SET_K", "TO_K", "ADD_K", 
 		"TEXT_K", "OPEN_K", "SHOW_K", "MSGBOX_K", "IMPORT_K", "FILE_K", "SELECT", 
 		"SOLID_K", "APPLY_K", "EFFECT_K", "PARAMS_K", "NEW_K", "FOLDER_K", "ANNOTATION_MARK", 
 		"MOVE_K", "NEW_", "RECTANGLE_K", "SETVALUES_FUNC", "LPAREN", "RPAREN", 
@@ -1665,7 +1664,7 @@ public class AffectScriptParser extends Parser {
 			{
 			setState(229);
 			_la = _input.LA(1);
-			if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__2) | (1L << T__3) | (1L << COMPOSITION_K) | (1L << TEXT_K) | (1L << SOLID_K) | (1L << FOLDER_K) | (1L << RECTANGLE_K))) != 0)) ) {
+			if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__2) | (1L << COMPOSITION_K) | (1L << SHAPE_K) | (1L << TEXT_K) | (1L << SOLID_K) | (1L << FOLDER_K) | (1L << RECTANGLE_K))) != 0)) ) {
 			_errHandler.recoverInline(this);
 			}
 			else {
@@ -1886,7 +1885,7 @@ public class AffectScriptParser extends Parser {
 			setState(244);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__6) | (1L << T__7) | (1L << LBRACK) | (1L << LBRACE) | (1L << IF) | (1L << WHILE) | (1L << TYPEINT) | (1L << TYPEFLOAT) | (1L << TYPESTRING) | (1L << TYPEBOOLEAN))) != 0) || _la==ID) {
+			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__5) | (1L << T__6) | (1L << LBRACK) | (1L << LBRACE) | (1L << IF) | (1L << WHILE) | (1L << TYPEINT) | (1L << TYPEFLOAT) | (1L << TYPESTRING) | (1L << TYPEBOOLEAN))) != 0) || _la==ID) {
 				{
 				setState(242);
 				_errHandler.sync(this);
@@ -1968,7 +1967,7 @@ public class AffectScriptParser extends Parser {
 			setState(254);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__0) | (1L << T__6) | (1L << T__7) | (1L << LBRACK) | (1L << LBRACE) | (1L << IF) | (1L << WHILE) | (1L << TYPEINT) | (1L << TYPEFLOAT) | (1L << TYPESTRING) | (1L << TYPEBOOLEAN))) != 0) || _la==ID) {
+			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__0) | (1L << T__5) | (1L << T__6) | (1L << LBRACK) | (1L << LBRACE) | (1L << IF) | (1L << WHILE) | (1L << TYPEINT) | (1L << TYPEFLOAT) | (1L << TYPESTRING) | (1L << TYPEBOOLEAN))) != 0) || _la==ID) {
 				{
 				setState(252);
 				_errHandler.sync(this);
@@ -2089,7 +2088,7 @@ public class AffectScriptParser extends Parser {
 			setState(263);
 			match(LBRACE);
 			setState(264);
-			match(T__4);
+			match(T__3);
 			setState(265);
 			match(COLON);
 			setState(266);
@@ -2101,7 +2100,7 @@ public class AffectScriptParser extends Parser {
 			setState(269);
 			match(COMMA);
 			setState(270);
-			match(T__5);
+			match(T__4);
 			setState(271);
 			match(COLON);
 			setState(272);
@@ -2736,7 +2735,7 @@ public class AffectScriptParser extends Parser {
 				enterOuterAlt(_localctx, 10);
 				{
 				setState(339);
-				match(T__6);
+				match(T__5);
 				setState(340);
 				match(LPAREN);
 				setState(342);
@@ -2758,7 +2757,7 @@ public class AffectScriptParser extends Parser {
 				enterOuterAlt(_localctx, 11);
 				{
 				setState(345);
-				match(T__7);
+				match(T__6);
 				setState(346);
 				expr(0);
 				}
@@ -2768,7 +2767,7 @@ public class AffectScriptParser extends Parser {
 				enterOuterAlt(_localctx, 12);
 				{
 				setState(347);
-				match(T__7);
+				match(T__6);
 				setState(348);
 				match(ID);
 				setState(349);
@@ -2994,11 +2993,11 @@ public class AffectScriptParser extends Parser {
 			setState(373);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			while (_la==T__8) {
+			while (_la==T__7) {
 				{
 				{
 				setState(369);
-				match(T__8);
+				match(T__7);
 				setState(370);
 				expr(0);
 				}
@@ -3053,8 +3052,8 @@ public class AffectScriptParser extends Parser {
 			setState(378);
 			_errHandler.sync(this);
 			switch (_input.LA(1)) {
+			case T__5:
 			case T__6:
-			case T__7:
 			case LBRACK:
 			case LBRACE:
 			case IF:
@@ -3585,7 +3584,7 @@ public class AffectScriptParser extends Parser {
 				enterOuterAlt(_localctx, 4);
 				{
 				setState(424);
-				match(T__9);
+				match(T__8);
 				setState(425);
 				match(LBRACK);
 				setState(426);
@@ -3624,7 +3623,7 @@ public class AffectScriptParser extends Parser {
 						{
 						{
 						setState(434);
-						match(T__10);
+						match(T__9);
 						setState(435);
 						setexpr();
 						}
@@ -4099,7 +4098,7 @@ public class AffectScriptParser extends Parser {
 		"\13&\5&\u01bc\n&\3\'\3\'\3(\3(\3(\5(\u01c3\n(\3(\3(\3)\3)\3)\7)\u01ca"+
 		"\n)\f)\16)\u01cd\13)\3*\3*\3*\3*\3*\3*\3*\3*\3*\3*\5*\u01d9\n*\3*\2\3"+
 		"H+\2\4\6\b\n\f\16\20\22\24\26\30\32\34\36 \"$&(*,.\60\62\64\668:<>@BD"+
-		"FHJLNPR\2\4\b\2\5\6\21\21\25\25\34\34!!%%\4\2==?J\2\u01fe\2b\3\2\2\2\4"+
+		"FHJLNPR\2\4\b\2\5\5\20\21\25\25\34\34!!%%\4\2==?J\2\u01fe\2b\3\2\2\2\4"+
 		"h\3\2\2\2\6l\3\2\2\2\bq\3\2\2\2\nv\3\2\2\2\f|\3\2\2\2\16\u0085\3\2\2\2"+
 		"\20\u008a\3\2\2\2\22\u008e\3\2\2\2\24\u0099\3\2\2\2\26\u009b\3\2\2\2\30"+
 		"\u00a0\3\2\2\2\32\u00a4\3\2\2\2\34\u00b3\3\2\2\2\36\u00b5\3\2\2\2 \u00c2"+
@@ -4113,9 +4112,9 @@ public class AffectScriptParser extends Parser {
 		"]c\5\26\f\2^c\5\32\16\2_c\58\35\2`c\5\36\20\2ac\5\30\r\2bT\3\2\2\2bU\3"+
 		"\2\2\2bV\3\2\2\2bW\3\2\2\2bX\3\2\2\2bY\3\2\2\2bZ\3\2\2\2b[\3\2\2\2b\\"+
 		"\3\2\2\2b]\3\2\2\2b^\3\2\2\2b_\3\2\2\2b`\3\2\2\2ba\3\2\2\2cd\3\2\2\2d"+
-		"b\3\2\2\2de\3\2\2\2ef\3\2\2\2fg\7\2\2\3g\3\3\2\2\2hi\7\16\2\2ij\7\17\2"+
+		"b\3\2\2\2de\3\2\2\2ef\3\2\2\2fg\7\2\2\3g\3\3\2\2\2hi\7\r\2\2ij\7\16\2"+
 		"\2jk\7M\2\2k\5\3\2\2\2lm\7N\2\2mn\7\'\2\2no\5$\23\2op\7(\2\2p\7\3\2\2"+
-		"\2qr\7M\2\2rs\7\63\2\2st\7\20\2\2tu\5,\27\2u\t\3\2\2\2vw\7\22\2\2wx\7"+
+		"\2qr\7M\2\2rs\7\63\2\2st\7\17\2\2tu\5,\27\2u\t\3\2\2\2vw\7\22\2\2wx\7"+
 		"M\2\2xy\5J&\2yz\7\23\2\2z{\7M\2\2{\13\3\2\2\2|}\7\22\2\2}~\7\37\2\2~\177"+
 		"\7Q\2\2\177\u0080\7\23\2\2\u0080\u0081\7M\2\2\u0081\u0082\7-\2\2\u0082"+
 		"\u0083\5:\36\2\u0083\u0084\7.\2\2\u0084\r\3\2\2\2\u0085\u0086\7\24\2\2"+
@@ -4159,8 +4158,8 @@ public class AffectScriptParser extends Parser {
 		"\u0102\3\2\2\2\u0100\u00fe\3\2\2\2\u0100\u0101\3\2\2\2\u0101\u0103\3\2"+
 		"\2\2\u0102\u0100\3\2\2\2\u0103\u0104\7.\2\2\u0104\63\3\2\2\2\u0105\u0106"+
 		"\7-\2\2\u0106\u0107\5> \2\u0107\u0108\7.\2\2\u0108\65\3\2\2\2\u0109\u010a"+
-		"\7-\2\2\u010a\u010b\7\7\2\2\u010b\u010c\7)\2\2\u010c\u010d\7-\2\2\u010d"+
-		"\u010e\5:\36\2\u010e\u010f\7.\2\2\u010f\u0110\7*\2\2\u0110\u0111\7\b\2"+
+		"\7-\2\2\u010a\u010b\7\6\2\2\u010b\u010c\7)\2\2\u010c\u010d\7-\2\2\u010d"+
+		"\u010e\5:\36\2\u010e\u010f\7.\2\2\u010f\u0110\7*\2\2\u0110\u0111\7\7\2"+
 		"\2\u0111\u0112\7)\2\2\u0112\u0113\7-\2\2\u0113\u0114\5:\36\2\u0114\u0115"+
 		"\7.\2\2\u0115\u0116\7.\2\2\u0116\67\3\2\2\2\u0117\u0118\7M\2\2\u0118\u0119"+
 		"\7\63\2\2\u0119\u011a\7\31\2\2\u011a\u011b\7\32\2\2\u011b9\3\2\2\2\u011c"+
@@ -4182,10 +4181,10 @@ public class AffectScriptParser extends Parser {
 		"\u0149\7M\2\2\u0149\u014a\7+\2\2\u014a\u014b\5H%\2\u014b\u014c\7,\2\2"+
 		"\u014c\u014d\7\63\2\2\u014d\u014e\5H%\2\u014e\u0162\3\2\2\2\u014f\u0150"+
 		"\7M\2\2\u0150\u0151\7\63\2\2\u0151\u0152\5H%\2\u0152\u0153\5B\"\2\u0153"+
-		"\u0162\3\2\2\2\u0154\u0162\5N(\2\u0155\u0156\7\t\2\2\u0156\u0158\7\'\2"+
+		"\u0162\3\2\2\2\u0154\u0162\5N(\2\u0155\u0156\7\b\2\2\u0156\u0158\7\'\2"+
 		"\2\u0157\u0159\5H%\2\u0158\u0157\3\2\2\2\u0158\u0159\3\2\2\2\u0159\u015a"+
-		"\3\2\2\2\u015a\u0162\7(\2\2\u015b\u015c\7\n\2\2\u015c\u0162\5H%\2\u015d"+
-		"\u015e\7\n\2\2\u015e\u015f\7M\2\2\u015f\u0162\5B\"\2\u0160\u0162\5\60"+
+		"\3\2\2\2\u015a\u0162\7(\2\2\u015b\u015c\7\t\2\2\u015c\u0162\5H%\2\u015d"+
+		"\u015e\7\t\2\2\u015e\u015f\7M\2\2\u015f\u0162\5B\"\2\u0160\u0162\5\60"+
 		"\31\2\u0161\u0128\3\2\2\2\u0161\u0131\3\2\2\2\u0161\u0137\3\2\2\2\u0161"+
 		"\u013a\3\2\2\2\u0161\u013f\3\2\2\2\u0161\u0143\3\2\2\2\u0161\u0148\3\2"+
 		"\2\2\u0161\u014f\3\2\2\2\u0161\u0154\3\2\2\2\u0161\u0155\3\2\2\2\u0161"+
@@ -4194,7 +4193,7 @@ public class AffectScriptParser extends Parser {
 		"\2\2\2\u0167\u016a\3\2\2\2\u0168\u0166\3\2\2\2\u0168\u0169\3\2\2\2\u0169"+
 		"?\3\2\2\2\u016a\u0168\3\2\2\2\u016b\u016c\7M\2\2\u016c\u016d\7)\2\2\u016d"+
 		"\u0172\5J&\2\u016e\u016f\7Q\2\2\u016f\u0170\7)\2\2\u0170\u0172\5J&\2\u0171"+
-		"\u016b\3\2\2\2\u0171\u016e\3\2\2\2\u0172A\3\2\2\2\u0173\u0174\7\13\2\2"+
+		"\u016b\3\2\2\2\u0171\u016e\3\2\2\2\u0172A\3\2\2\2\u0173\u0174\7\n\2\2"+
 		"\u0174\u0176\5H%\2\u0175\u0173\3\2\2\2\u0176\u0179\3\2\2\2\u0177\u0175"+
 		"\3\2\2\2\u0177\u0178\3\2\2\2\u0178C\3\2\2\2\u0179\u0177\3\2\2\2\u017a"+
 		"\u017d\5<\37\2\u017b\u017d\5\34\17\2\u017c\u017a\3\2\2\2\u017c\u017b\3"+
@@ -4211,10 +4210,10 @@ public class AffectScriptParser extends Parser {
 		"\u019a\3\2\2\2\u019d\u01bc\7O\2\2\u019e\u019f\7+\2\2\u019f\u01a0\7O\2"+
 		"\2\u01a0\u01a1\7*\2\2\u01a1\u01a2\7O\2\2\u01a2\u01a3\7*\2\2\u01a3\u01a4"+
 		"\7O\2\2\u01a4\u01bc\7,\2\2\u01a5\u01a6\7+\2\2\u01a6\u01a7\7O\2\2\u01a7"+
-		"\u01a8\7*\2\2\u01a8\u01a9\7O\2\2\u01a9\u01bc\7,\2\2\u01aa\u01ab\7\f\2"+
+		"\u01a8\7*\2\2\u01a8\u01a9\7O\2\2\u01a9\u01bc\7,\2\2\u01aa\u01ab\7\13\2"+
 		"\2\u01ab\u01ac\7+\2\2\u01ac\u01ad\7O\2\2\u01ad\u01ae\7*\2\2\u01ae\u01af"+
 		"\7O\2\2\u01af\u01b0\7*\2\2\u01b0\u01b1\7O\2\2\u01b1\u01bc\7,\2\2\u01b2"+
-		"\u01bc\7Q\2\2\u01b3\u01b8\7M\2\2\u01b4\u01b5\7\r\2\2\u01b5\u01b7\5J&\2"+
+		"\u01bc\7Q\2\2\u01b3\u01b8\7M\2\2\u01b4\u01b5\7\f\2\2\u01b5\u01b7\5J&\2"+
 		"\u01b6\u01b4\3\2\2\2\u01b7\u01ba\3\2\2\2\u01b8\u01b6\3\2\2\2\u01b8\u01b9"+
 		"\3\2\2\2\u01b9\u01bc\3\2\2\2\u01ba\u01b8\3\2\2\2\u01bb\u019d\3\2\2\2\u01bb"+
 		"\u019e\3\2\2\2\u01bb\u01a5\3\2\2\2\u01bb\u01aa\3\2\2\2\u01bb\u01b2\3\2"+
